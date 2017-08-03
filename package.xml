@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package>
+  <name>allan_variance</name>
+  <version>0.0.0</version>
+  <description>The allan_variance package</description>
+
+  <maintainer email="jdp0009@auburn.edu">Dan Pierce</maintainer>
+
+  <license>GAVLAB</license>
+
+  <author email="jdp0009@auburn.edu">Dan Pierce</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>rosbag</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>rospkg</build_depend>
+
+  <run_depend>sensor_msgs</run_depend>
+  <run_depend>rosbag</run_depend>
+  <run_depend>rospy</run_depend>
+  <run_depend>rospkg</run_depend>
+
+</package>

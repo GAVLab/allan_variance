@@ -1,0 +1,13 @@
+<launch>
+
+  <node pkg="allan_variance" type="allan.py" name="allan_variance" output="screen" required="false">
+  	<param name="bagfile_path" value="/home/danpierce/devel/allanvar_ws/data/kvh1725_static_test.bag"/>
+  	<param name="imu_topic_name" value="/kvh_1750_imu/imu"/>
+  	<param name="axis" value="2"/>
+  	<param name="sample_rate" value="250"/>
+    <param name="delta_measurement" value="false"/>
+  	<param name="number_of_lags" value="1000"/>
+    <!-- <param name="results_directory_path" value="/path/to/results/directory"/> -->
+  </node>
+
+</launch>
