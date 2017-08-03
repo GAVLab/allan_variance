@@ -16,6 +16,7 @@ A launch file is provided for using the allan.py script. The script parses a bag
 ### Parameters ###
 
 ~bagfile_path (string, default: "")
+ 
     The global path to the bagile containing static IMU data.
 
 ~imu_topic_name (string, default: "/imu")
