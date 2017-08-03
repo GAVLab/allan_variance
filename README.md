@@ -4,10 +4,14 @@ Code for IMU characterization using Allan variance techniques. Plays nicely with
 ## Installing Dependencies ##
 
 Install pip (if necessary)
-```sudo easy_install pip```
+```
+sudo easy_install pip
+```
 
 Install allantools (https://github.com/aewallin/allantools)
-```sudo pip install allantools```
+```
+sudo pip install allantools
+```
 
 ## Usage ##
 
@@ -16,8 +20,7 @@ A launch file is provided for using the allan.py script. The script parses a bag
 ### Parameters ###
 
 ~bagfile_path (string, default: "")
- 
-    The global path to the bagile containing static IMU data.
+&nbsp;&nbsp;&nbsp;&nbsp;The global path to the bagile containing static IMU data.
 
 ~imu_topic_name (string, default: "/imu")
 	The name of the IMU topic within the bagfile. Note: topic must be of the sensor_msgs/Imu type.
