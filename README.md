@@ -24,23 +24,30 @@ A launch file is provided for using the allan.py script. The script parses a bag
 &nbsp;&nbsp;&nbsp;&nbsp;The global path to the bagile containing static IMU data.
 
 ~imu_topic_name (string, default: "/imu")
-	The name of the IMU topic within the bagfile. Note: topic must be of the sensor_msgs/Imu type.
+
+&nbsp;&nbsp;&nbsp;&nbsp;The name of the IMU topic within the bagfile. Note: topic must be of the sensor_msgs/Imu type.
 
 ~axis (int, default: 0)
-	Specify which axis/measurement to perform the allan variance. (0 = all six axes, 1 = x-accel, 2 = y-accel, 3 = z-accel, 4 = x-gyro, 5 = y-gyro, 6 = z-gyro).
+
+&nbsp;&nbsp;&nbsp;&nbsp;Specify which axis/measurement to perform the allan variance. (0 = all six axes, 1 = x-accel, 2 = y-accel, 3 = z-accel, 4 = x-gyro, 5 = y-gyro, 6 = z-gyro).
 
 ~sample_rate (int, default: 100)
-	The sample rate of the IMU in Hz.
+
+&nbsp;&nbsp;&nbsp;&nbsp;The sample rate of the IMU in Hz.
 
 ~delta_measurement (bool, default: false)
-    'true' if delta measurements (change in angle/velocity)
-    'false' if rate measurements (rotation rate/acceleration)
+
+&nbsp;&nbsp;&nbsp;&nbsp;'true' if delta measurements (change in angle/velocity)
+
+&nbsp;&nbsp;&nbsp;&nbsp;'false' if rate measurements (rotation rate/acceleration)
 
 ~number_of_lags (int, default: 1000)
-	The number of lags (tau values) used in calculating the allan variance.
+
+&nbsp;&nbsp;&nbsp;&nbsp;The number of lags (tau values) used in calculating the allan variance.
 
 ~results_directory_path (string, default: None)
-    The path to the directory where the results should be stored. If left unspecified, a directory will be created in the workspace (e.g. ~/allan_ws/av_results/allan_accel_x.csv).
+
+&nbsp;&nbsp;&nbsp;&nbsp;The path to the directory where the results should be stored. If left unspecified, a directory will be created in the workspace (e.g. ~/allan_ws/av_results/allan_accel_x.csv).
 
 ## To do ##
 
