@@ -29,7 +29,7 @@ A launch file is provided for using the allan.py script. The script parses a bag
 
 ~axis (int, default: 0)
 
->    Specify which axis/measurement to perform the allan variance. (0 = all six axes, 1 = x-accel, 2 = y-accel, 3 = z-accel, 4 = x-gyro, 5 = y-gyro, 6 = z-gyro).
+>Specify which axis/measurement to perform the allan variance. (0 = all six axes, 1 = x-accel, 2 = y-accel, 3 = z-accel, 4 = x-gyro, 5 = y-gyro, 6 = z-gyro).
 
 ~sample_rate (int, default: 100)
 
