@@ -132,8 +132,6 @@ def main(args):
             data[5,cnt] = msg.angular_velocity.z * scale
             cnt = cnt + 1
 
-        bag.close()
-
         print "[%0.2f seconds] Bagfile parsed\n"%(rospy.get_time()-t0)
 
         """"""""""""""""""
@@ -164,7 +162,7 @@ def main(args):
         plt.figure(figsize=(12,8))
         ax = plt.gca()
 
-        plt.plot(finalTime*range(1,numChunks)/numChunks,rwErrSum,'rx-',markeredgewidth=2.5,markersize=14.0)
+        plt.plot(rwErrSum,'rx-',markeredgewidth=2.5,markersize=14.0)
 
         plt.title("Error vs. AV time")
         plt.xlabel('Dataset length [hours]')
@@ -176,10 +174,7 @@ def main(args):
 
         plt.show(block=False)
 
-
-
-
-
+    bag.close()
     inp=raw_input("Press Enter key to close figures and end program\n")
 
 
